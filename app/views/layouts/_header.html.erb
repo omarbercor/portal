@@ -1,0 +1,46 @@
+    <div class="container">
+      <header class="main-header pt-5 py-3">
+        <div class="row  justify-content-between align-items-center">
+          <!-- LOGO -->
+          <div class="main-header__logo-box align-middle col-sm-6 col-md-4 col-lg-3 pt-1">
+            <a class="text-muted" href="http://localhost:3000/">
+              <img class="main-header__logo-box--img" src="<%= asset_path('logo') %>" alt="">
+            </a>
+            <p class="main-header__logo--slogan">Real State Company</p>
+          </div>
+          <!-- MOBILE MENU -->
+          <div class="main-header__logo-box align-middle col-md-3 pt-1 d-md-none">
+            <%= render "layouts/main-menu" %>
+          </div>
+          <!-- CALL US -->
+          <div class="col-md-4 col-lg-2 pt-1 text-left d-none d-md-block">
+            <p class="main-header__call-box--label my-auto">Llamanos</p>
+            <div class="main-header__call-box--number my-auto">
+              <a href="tel:55 1660 7641">55 1660 7641</a>
+            </div>
+          </div>
+          <!-- SOCIAL MEDIA ICONS -->
+          <div class="main-header__social-box col-md-4  pt-1 text-right d-none d-md-none d-xl-block">
+            <ul class="list-inline my-auto">
+              <li class="main-header__social-box--item list-inline-item"><i class="fab fa-facebook-f"></i></li>
+              <li class="main-header__social-box--item list-inline-item"><i class="fab fa-twitter"></i></li>
+              <li class="main-header__social-box--item list-inline-item"><i class="fab fa-linkedin"></i></li>
+              <li class="main-header__social-box--item list-inline-item"><i class="fab fa-youtube"></i></li>
+              <li class="main-header__social-box--item list-inline-item"><i class="fab fa-instagram"></i></li>
+              <li class="main-header__social-box--item list-inline-item"><i class="fab fa-pinterest"></i></li>
+              <li class="main-header__social-box--item list-inline-item"><i class="fab fa-whatsapp"></i></li>
+            </ul>
+          </div>
+          <!-- SEARCH -->
+          <div class="main-header__search-box col-md-3 pt-1">
+            <%= render "layouts/search-input" %>
+          </div>
+        </div>
+      </header>
+      <!-- MAIN NAV -->
+      <div class="row">
+        <div class="col-md-12 d-none d-md-block">
+            <%= render "layouts/main-menu" %>
+        </div>
+      </div>
+  </div>

@@ -1,0 +1,27 @@
+        <!-- Set up your HTML owl-carousel-->
+        <div class="owl-carousel property-hero_carousel">
+          <%= render "layouts/property-hero_item01" %>
+          <%= render "layouts/property-hero_item02" %>
+        </div>
+        <script>
+            $( document ).ready(function() {
+                console.log( "page ready!" );
+                $('.owl-carousel').owlCarousel({
+                    loop:false,
+                    margin:10,
+                    nav:true,
+                    navText:["<div class='nav-btn prev-slide property-hero_nav--circle'><i class='fas fa-chevron-left'></i></div>","<div class='nav-btn next-slide property-hero_nav--circle'><i class='fas fa-chevron-right'></i></div>"],
+                    responsive:{
+                        0:{
+                            items:1
+                        },
+                        600:{
+                            items:1
+                        },
+                        1000:{
+                            items:1
+                        }
+                    }
+                });
+            });
+        </script>

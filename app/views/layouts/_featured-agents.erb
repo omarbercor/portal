@@ -1,0 +1,41 @@
+ <section class="bg-beige mt-overlapped-md">
+    <div class="container pt-5 p-5 featured-a">
+      <div class="row">
+        <div class="col-md-12 text-center pb-5">
+          <h2>Nuestros Agentes Destacados</h2>
+        </div>
+        <div class="owl-carousel">
+          <%= render "layouts/featured-agentsitem" %>
+          <%= render "layouts/featured-agentsitem" %>
+          <%= render "layouts/featured-agentsitem" %>
+          <%= render "layouts/featured-agentsitem" %>
+          <%= render "layouts/featured-agentsitem" %>
+          <%= render "layouts/featured-agentsitem" %>
+        </div>
+        <script>
+            $( document ).ready(function() {
+                console.log( "page ready!" );
+                $('.owl-carousel').owlCarousel({
+                    loop:false,
+                    margin:10,
+                    nav:true,
+                    navText:["<div class='nav-btn prev-slide featured-a__nav--circle shadow-sm'><img class='featured-a__nav--arrow' src='<%= asset_path('large_back') %>'></div>","<div class='nav-btn next-slide featured-a__nav--circle shadow-sm'><img class='featured-a__nav--arrow' src='<%= asset_path('large_next') %>'></div>"],
+                    responsive:{
+                        0:{
+                            items:1
+                        },
+                        600:{
+                            items:2
+                        },
+                        1000:{
+                            items:4
+                        }
+                    }
+                });
+            });
+        </script>
+      </div>
+    </div>
+ </section>
+
+
